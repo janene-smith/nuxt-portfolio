@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <h1>This is the Home page</h1>
-    <Tutorial/>
+    <nuxt-link to="/"></nuxt-link>
     <!-- Jumbotron -->
     <div class="jumbotron">
       <h1 class="display-4">History and Family</h1>
@@ -63,7 +62,7 @@ export default {
   }
 };
 </script>
-<!-- <style lang="scss">
+<style lang="scss">
 // Style for v-if-v-else statement
 label {
   padding-right: 30px;
@@ -129,7 +128,7 @@ btn {
   width: auto;
   height: 350px;
 }
-</style> -->
+</style>
 
 
 <!-- <script>
