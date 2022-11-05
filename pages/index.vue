@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <nuxt-link to="/"></nuxt-link>
+    <nuxt-link to="/">
+        
+    </nuxt-link>
+        <!-- <a href="/">...</a> (+Vue Router & prefetching) -->
     <!-- Jumbotron -->
     <div class="jumbotron">
       <h1 class="display-4">History and Family</h1>

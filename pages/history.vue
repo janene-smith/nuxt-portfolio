@@ -1,7 +1,10 @@
 <template>
     <!-- In the future come back and figure our adding links into accordion -->
   <div id="app">
-    <nuxt-link to="/history"></nuxt-link>
+        <nuxt-link to="/history">
+            
+        </nuxt-link>
+        <!-- <a href="/history">...</a> (+Vue Router & prefetching) -->
     <div>
       <h1>World War II History found in the pages of an Album</h1>
       <img class="header" alt="Pointe du Hoc, Cricqueville-en-Bessin, Normandie, Calvados, France By Pascal Moulin " src="../static/AdobeStock_175334157.jpeg" width=100% height=230px />

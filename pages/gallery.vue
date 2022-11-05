@@ -1,6 +1,9 @@
 <template>
     <div id="app">
-        <nuxt-link to="/galllery"></nuxt-link>
+        <nuxt-link to="/galllery">
+            
+        </nuxt-link>
+        <!-- <a href="/gallery">...</a> (+Vue Router & prefetching) -->
       <div>
         <img 
           alt="Panorama Arromanches by Olivier Rault" 

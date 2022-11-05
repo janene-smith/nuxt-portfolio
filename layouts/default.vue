@@ -4,7 +4,7 @@
         <nav>
             <NuxtLink to="/">Home</NuxtLink> |
             <NuxtLink to="/gallery">Gallery</NuxtLink> |
-            <NuxtLink to="/history">History</NuxtLink>
+            <NuxtLink to="/history">History</NuxtLink> |
         </nav>
         <Nuxt />
         <!-- This is where you would put the  footer  -->
