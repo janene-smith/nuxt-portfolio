@@ -21,7 +21,7 @@
               <div class="container-fluid">
                 <div class="align-items-start">
                   <h4 class="mt-3">Gerald N. Croom Army Registration Card</h4>
-                  <img class="img-fluid rounded d-block" src="./imgs/G-Croom-WWII-registration-front-028-th.jpg" alt="Gerald N. Croom Army Registration Card - Front">
+                  <img class="img-fluid rounded d-block" src="./static/G-Croom-WWII-registration-front-028-th.jpg" alt="Gerald N. Croom Army Registration Card - Front">
                 </div>
                 <div class="container-fluid justify-content-around">
                   <!-- Custom Blockquote -->
@@ -38,7 +38,7 @@
                 </div>
                 <div>
                   <h4 class="my-3">American Flag Signed by Military Police Army Unit</h4>
-                  <img class="img-fluid rounded d-block" src="./imgs/American Flag with MP unit names-Croom-WWII.jpg" alt="American Flag signed by MP soldiers during WWII">
+                  <img class="img-fluid rounded d-block" src="./static/American Flag with MP unit names-Croom-WWII.jpg" alt="American Flag signed by MP soldiers during WWII">
                   <p class="italic">This U.S. flag was in my Great Uncles scrap album with signatures from fellow MP soldiers. Gerald N Croom signed top right corner.</p>
                 </div>
 
@@ -63,7 +63,7 @@
         <div class="row my-3">
             <div class="col-md">
                 <a class="text-decoration-none" href="./imgs/AdobeStock_69712984.jpeg" target="_blank">
-                  <img src="./imgs/AdobeStock_69712984.jpeg"  class="img-thumbnail-g mb-1 img-fluid rounded mx-auto d-block" alt="Soldier statue memorial. Omaha beach, France by pio3" style="width:100%">
+                  <img src="./static/AdobeStock_69712984.jpeg"  class="img-thumbnail-g mb-1 img-fluid rounded mx-auto d-block" alt="Soldier statue memorial. Omaha beach, France by pio3" style="width:100%">
                   <div class="text-center text-dark">
                     <p>Soldier statue memorial. Omaha beach, France</p>
                   </div>
@@ -71,7 +71,7 @@
             </div>
             <div class="col-md-4">
                 <a class="text-decoration-none" href="./imgs/AdobeStock_136873346.jpeg" target="_blank">
-                  <img src="./imgs/AdobeStock_136873346.jpeg" class="img-thumbnail-g mb-1" alt="World War II Memorial, Washington D.C. by justinfegan" style="width:100%">
+                  <img src="./static/AdobeStock_136873346.jpeg" class="img-thumbnail-g mb-1" alt="World War II Memorial, Washington D.C. by justinfegan" style="width:100%">
                   <div class="text-center text-dark">
                     <p>World War II Memorial, Washington D.C.</p>
                   </div>
@@ -79,7 +79,7 @@
             </div>
             <div class="col-md-4">
                 <a class="text-decoration-none" href="./imgs/AdobeStock_199472126.jpeg" target="_blank">
-                  <img src="./imgs/AdobeStock_199472126.jpeg"  class="img-thumbnail-g mb-1" alt="World War II D Day memorial on Juno Beach, Graye sur mer, France by thomathzac23" style="width:100%">
+                  <img src="./static/AdobeStock_199472126.jpeg"  class="img-thumbnail-g mb-1" alt="World War II D Day memorial on Juno Beach, Graye sur mer, France by thomathzac23" style="width:100%">
                   <div class="text-center text-dark">
                     <p class="mb-0">World War II D Day memorial on Juno Beach</p>
                     <p class="mt-0">Graye sur mer, France</p>
