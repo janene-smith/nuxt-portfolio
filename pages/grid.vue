@@ -4,10 +4,10 @@
             
       </nuxt-link>
       <h1 class="ml-2 mb-1">Rememberance</h1>
-          <!-- <img class="img fluid" src="./static/AdobeStock_26591710.jpeg" width=100% height=250px  alt="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" />
+          <img class="img fluid" src="./static/AdobeStock_26591710.jpeg" width=100% height=250px  alt="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" />
             <title>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</title>
             <rect width=100% height=100% ></rect>
-            <text class="bg-dark text-white text-right mb-0 text-wrap" x=50% y=50% dy=.10em>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</text> -->
+            <text class="bg-dark text-white text-right mb-0 text-wrap" x=50% y=50% dy=.10em>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</text>
       <!-- Creates three equal-width columns on sm,md,l,xl devices using predefined grid classes. Columns centered in page with parent .container -->
       
           <div>
