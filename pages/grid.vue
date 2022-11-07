@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+      <nuxt-link to="/grid">
+            
+      </nuxt-link>
       <h1 class="ml-2 mb-1">Rememberance</h1>
           <!-- <img class="img fluid" src="./static/AdobeStock_26591710.jpeg" width=100% height=250px  alt="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" />
             <title>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</title>
