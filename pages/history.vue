@@ -6,8 +6,11 @@
         </nuxt-link>
         <!-- <a href="/history">...</a> (+Vue Router & prefetching) -->
     <div>
-      <h1>World War II History found in the pages of an Album</h1>
+      <h1 class="ml-2 mb-1">World War II History found in the pages of an Album</h1>
       <img class="header" alt="Pointe du Hoc, Cricqueville-en-Bessin, Normandie, Calvados, France By Pascal Moulin " src="../static/AdobeStock_175334157.jpeg" width=100% height=230px />
+      <title>Pointe du Hoc, Cricqueville-en-Bessin, Normandie, Calvados, France By Pascal Moulin</title>
+            <rect width=100% height=100% ></rect>
+            <text class="bg-dark text-white text-right mb-3" x=50% y=50% dy=.10em>Pointe du Hoc, Cricqueville-en-Bessin, Normandie, Calvados, France by Pascal Moulin</text>
       <hr />
     </div>
     <div class="accordion" :id="'accordionExample'+id" v-for="(account, id) in accounts" :key="id" >
@@ -40,21 +43,21 @@ export default {
         {
           id: 1,
           title: "World War II Informational Links",
-          answer: 'href="http://www.omaha- beach.eu">Omaha Beach Project June 6, 1944',
+          answer: 'href="http://www.omaha-beach.eu">Omaha Beach Project June 6, 1944',
           open: true
         },
         {
           id: 2,
           title: "WWII Newsprint in color",
           answer: 'Newspaper clipping found in my uncles scrap album of paintings by Ogden Pleissner. Assumed titles: ENGLANDs AIRFIELDS and FLOCKS OF FLYING FORTRESSES. Source unknown.',
-          image: './static/Englands-Airfields-a.jpg',
+          image: '../static/Englands-Airfields-a.jpg',
           open: true
         },
         {
           id: 3,
           title: 'The Stars and Stripes Paris Edition | Monday, May 7, 1945',
           answer: 'Hello',
-          image: './static/front-page.jpg',
+          image: '../static/front-page.jpg',
           open: true
         }
       ]
