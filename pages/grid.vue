@@ -105,6 +105,48 @@
 
 </script>
 <style lang="scss">
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.main {
+    padding: 0rem;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+.img-fluid {
+  width: auto;
+}
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+text {
+  display: block;
+  white-space: nowrap;
+}
+
+.text-right {
+  padding-right: 1rem;
+}
+
+div {
+  display: block;
+}
+
 /* Grid area */
 .container2 {
   display: grid;
