@@ -9,16 +9,16 @@
             <rect width=100% height=100% ></rect>
             <text class="bg-dark text-white text-right mb-0 text-wrap" x=50% y=50% dy=.10em>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</text>
       <!-- Creates three equal-width columns on sm,md,l,xl devices using predefined grid classes. Columns centered in page with parent .container -->
-      
-          <div>
-            <div class="col-sm-4 bg-dark pb-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 bg-dark pb-3">
               <h2 class="text-center mt-2">Gerald N. Croom</h2>
               <h5 class="text-center">July 20, 1921 ~ Hardy, Arkansas</h5>
               <h5 class="text-center">January 22, 2009 ~ Portland, Oregon</h5>
               <img class="img-fluid rounded mx-auto d-block" src="../static/Croom-Portillo-Studio-Laredo-Texas-th.jpg" alt="Military Photograph of Gerald N. Croom, Laredo, Texas">
               <p class="pt-2 font-italic text-center">Interment: Willamette National Cemetery</p>
               <p class="pl-3 pr-3">His brows were drawn into two hard black lines, while his eyes shone out from beneath them with a steely glitter. His face was bent downward, his shoulders bowed, his lips compressed, and the veins stood out like whipcord in his long, sinewy neck. His nostrils seemed to dilate with a purely animal lust for the chase, and his mind was so absolutely concentrated upon the matter before him that a question or remark fell unheeded upon his ears, or, at the most, only provoked a quick, impatient snarl in reply.</p>
-            </div>
+          </div>
             <div class="col-lg-8 mx-auto">
               <div class="container-fluid">
                 <div class="align-items-start">
@@ -38,9 +38,11 @@
                     </footer>
                   </blockquote>
                 </div>
+              </div>
+            </div>
                 <div>
                   <h4 class="my-3">American Flag Signed by Military Police Army Unit</h4>
-                  <img class="img-fluid rounded d-block" src="../static/American Flag with MP unit names-Croom-WWII.jpg" alt="American Flag signed by MP soldiers during WWII">
+                  <img src="../static/American Flag with MP unit names-Croom-WWII.jpg" alt="American Flag signed by MP soldiers during WWII"  class="img-fluid rounded d-block">
                   <p class="italic">This U.S. flag was in my Great Uncles scrap album with signatures from fellow MP soldiers. Gerald N Croom signed top right corner.</p>
                 </div>
 
@@ -99,7 +101,7 @@
             </div>
         </div>
   </div>
-</div>
+
 </template>
 <script>
 
@@ -126,6 +128,15 @@ html {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.container-fluid {
+  display: grid;
+}
+.col {
+  max-width: 30%;
+  .card {
+    width: 100%;
+  }
 }
 .img-fluid {
   width: auto;
