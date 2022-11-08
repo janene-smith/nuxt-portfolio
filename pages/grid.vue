@@ -18,7 +18,7 @@
               <img class="img-fluid rounded mx-auto d-block" src="../static/Croom-Portillo-Studio-Laredo-Texas-th.jpg" alt="Military Photograph of Gerald N. Croom, Laredo, Texas">
               <p class="pt-2 font-italic text-center">Interment: Willamette National Cemetery</p>
               <p class="pl-3 pr-3">His brows were drawn into two hard black lines, while his eyes shone out from beneath them with a steely glitter. His face was bent downward, his shoulders bowed, his lips compressed, and the veins stood out like whipcord in his long, sinewy neck. His nostrils seemed to dilate with a purely animal lust for the chase, and his mind was so absolutely concentrated upon the matter before him that a question or remark fell unheeded upon his ears, or, at the most, only provoked a quick, impatient snarl in reply.</p>
-          </div>
+            </div>
             <div class="col-lg-8 mx-auto">
               <div class="container-fluid">
                 <div class="align-items-start">
