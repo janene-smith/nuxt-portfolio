@@ -1,17 +1,33 @@
 <template>
     <article class="card">
-        <img :src="country.flag" :alt="country.name" class="card__img">
+        <!-- Incorporate data from an API. With returned data, build corresponding component and use v-for to loop over the data. -->
+        <!-- Props validation and 4 data points  -->
         <h2 class="card__title">{{ country.name }}</h2>
-        <p class="card__copy">{{ country.subregion }}</p>
+        <p class="card__history">{{ country.history }}</p>
+        <p class="card__situation">{{ country.situation }}</p>
+        <p class="card__summary">{{ country.summary }}</p>
+        <a class="card__link" href="https://">{{ country.links}}</a>
+        
     </article>
    </template>
    
    <script>
+
    export default {
-       props: {
-           country: Object
-       }
-   }
+            name: 'ResearchPage',
+        data () {
+          return {
+         
+          }
+        },
+        props: {
+            card__title: {type: String},
+            card__history: {type: String},
+            card__situation: {type: String},
+            card__summary: {type: String},
+            card__link: {type: link}
+        }
+    }
    </script>
    
    
@@ -20,8 +36,8 @@
        margin: 1rem;
        border: 1px solid #000;
        padding: 1.5rem;
-       max-width: 200px;
-       min-height: 200px;
+       max-width: 1000px;
+       min-height: 500px;
        &__img {
            display: block;
            margin-bottom: 1rem;
