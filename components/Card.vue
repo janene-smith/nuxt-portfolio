@@ -17,7 +17,7 @@
             name: 'ResearchPage',
         data () {
           return {
-         
+            
           }
         },
         props: {
@@ -25,7 +25,7 @@
             card__history: {type: String},
             card__situation: {type: String},
             card__summary: {type: String},
-            card__link: {type: link}
+            card__link: {type: String}  
         }
     }
    </script>
