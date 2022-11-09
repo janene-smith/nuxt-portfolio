@@ -12,7 +12,6 @@
    </template>
    
    <script>
-   import links from '../api/index.json'
    export default {
             name: 'ResearchPage',
         data () {
