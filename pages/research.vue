@@ -29,7 +29,7 @@ export default {
     },
     mounted() {
         axios
-            .get('https://portal.ehri-project.eu/api/graphql')
+            .get('https://portal.ehri-project.eu/api/v1')
             .then(response => [this.countries = response.data])
             .catch(error => {
                 console.log[error]
