@@ -1,5 +1,10 @@
 <template>
+    <div class="wrapper">
+        <h1 class="heading">EHRI</h1>
+        <h2 class="heading">European Holocaust Research Infrastructure</h2>
 
+        
+    </div>
 </template>
 <script>
 import Card from '../components/Card.vue'
@@ -46,10 +51,6 @@ export default {
     font-size: 2rem;
     color: #555555;
     margin: 2rem auto;
-}
-
-img {
-    max-width: 150px;
 }
 
 .title {

@@ -15,7 +15,7 @@
    </script>
    
    
-   <style lang="scss">
+   <style lang="scss"  scoped>
    .card {
        margin: 1rem;
        border: 1px solid #000;
