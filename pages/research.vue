@@ -8,7 +8,10 @@
                  :key="country.id"
                  :country="country"
             />
-        </section>      
+        </section> 
+        <div id="app">
+            <pre>{{ info }}</pre>
+        </div>     
     </div>
 </template>
 
