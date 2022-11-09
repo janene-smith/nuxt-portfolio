@@ -2,10 +2,16 @@
     <div class="wrapper">
         <h1 class="heading">EHRI</h1>
         <h2 class="heading">European Holocaust Research Infrastructure</h2>
-
-        
+        <section class="container" v-if="countries">
+            <Card
+                 v-for="country of countries"
+                 :key="country.id"
+                 :country="country"
+            />
+        </section>      
     </div>
 </template>
+
 <script>
 import Card from '../components/Card.vue'
 import axios from 'axios'
@@ -34,7 +40,7 @@ export default {
 }
 
 </script>
-<style>
+<style lang="scss" scoped>
 .container {
     min-height: 100vh;
     max-width: 1200px;
@@ -53,8 +59,24 @@ export default {
     margin: 2rem auto;
 }
 
+img {
+  max-width: 150px;
+}
+
 .title {
     font-family: "Quicksand", "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: block;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
 }
 </style>

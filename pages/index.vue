@@ -67,7 +67,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 // Style for v-if-v-else statement
 label {
   padding-right: 30px;
@@ -79,7 +79,12 @@ label {
 }
 p {
   text-align: left;
-  margin-left: 2rem;
+  margin-left: 1rem;
+
+}
+h1 {
+  margin: .5rem;
+  text-align: left;
 }
 h3 {
   margin: 40px 0 0;
@@ -95,7 +100,13 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #edf1f0;
+  text-decoration: none;
+  background-color: #17a2b8;
+}
+
+a:hover {
+  background-color: #17a2b8 50%;
 }
 // Style for Jumbotron on HomePage.vue
 .jumbotron {
@@ -103,19 +114,20 @@ a {
   margin: 0;
 }
 .jumbotron p.lead {
-  margin-left: auto;
+  margin-left: 1rem;
   margin-right: auto;
 }
 .caption div {
   overflow: hidden;
   max-width: 480px;
   align-items: flex-start;
-  text-align: center;
+  text-align: left;
 }
 p.custom {
   margin-bottom: .1rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-right: 2rem;
+  text-align:left;
 }
 .display-2 {
   margin-top: 0;
@@ -126,6 +138,7 @@ p.custom {
   margin-right: 2rem;
   text-align: left;
 }
+
 btn {
   text-decoration: none;
 }
