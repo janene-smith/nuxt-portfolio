@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Card from '../components/Card.vue'
 import axios from 'axios'
+import Card from '../components/Card.vue'
 
 export default {
     components: {
@@ -57,10 +57,6 @@ export default {
     font-size: 2rem;
     color: #555555;
     margin: 2rem auto;
-}
-
-img {
-  max-width: 150px;
 }
 
 .title {
