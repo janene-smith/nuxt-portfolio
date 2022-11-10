@@ -3,57 +3,43 @@
         <div class="wrapper">
             <h1 class="heading">EHRI</h1>
             <h2 class="heading">European Holocaust Research Infrastructure</h2>
-            <section class="container" v-if="countries">
-                <Card
-                    v-for="country of countries"
-                    :key="country.id"
-                    :country="country"
-                />
+            <section class="container">
+                <h4>Listing of organizations and their location</h4>
+                <!-- Create a child component to display the information and pass the data as props --> 
+                <ul>
+                    <li v-for="(organization, id) in organizations" :key="id">
+                        <span v-if="organization.attributes.name">
+                            {{ id }}.   {{ organization.attributes.name }} 
+                            {{ organization.attributes.address.organization }}
+                        </span>
+                    </li>
+                </ul>
             </section> 
-            <div class="row">
-                <div class="search-wrapper panel-heading col-sm-12">
-                    <input class="form-control" type="text" v-model="searchQuery" placeholder="Search" />
-                </div>                        
-            </div>
-            <div class="table-responsive">
-                <table v-if="resources.length" class="table">
-                    <thead>
-                        <tr>
-                            <!-- Country designation is two capital letters or spelled out -->
-                            <th>Country Search</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="item in resultQuery">
-                            <td><a v-bind:href="item.uri" target="_blank">{{item.title}}</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-        </div>
-            
         </div>     
     </div>
 </template>
 
 <script>
-import axios from 'axios'
-import Card from '../components/Card.vue'
+// Run npm install axios
+import axios from 'axios';
+
+// Import child component
+import Card from '../components/Card.vue';
 
 export default {
-    components: {
-        Card
-    },
+    name: 'researchPage',
     data() {
         return {
-            loading: true,
-            countries: null, 
-            errored: false
-        }
+          organizations: [],
+        };
+    },
+    components: {
+        // Register child component
     },
     mounted() {
         axios
-            .get('https://portal.ehri-project.eu/api/v1')
-            .then(response => [this.countries = response.data])
+            .get('https://portal.ehri-project.eu/api/v1/search')
+            .then(response => [this.organizations = response.data.data])
             .catch(error => {
                 console.log[error]
                 this.errored = true
@@ -61,8 +47,8 @@ export default {
             .finally(() => this.loading = false)
     }
 }
-
 </script>
+
 <style lang="scss" scoped>
 .container {
     min-height: 100vh;
@@ -79,9 +65,16 @@ export default {
     text-align: center;
     font-size: 2rem;
     color: #555555;
-    margin: 2rem auto;
+    margin:  auto;
 }
 
+h4 {
+    text-decoration: underline;
+}
+li {
+    list-style-type: none;
+    text-align: left;
+}
 .title {
     font-family: "Quicksand", "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: block;

@@ -13,12 +13,12 @@
             <text class="bg-dark text-white text-right mb-3" x=50% y=50% dy=.10em>Pointe du Hoc, Cricqueville-en-Bessin, Normandie, Calvados, France by Pascal Moulin</text>
       <hr />
     </div>
-    <div class="accordion" :id="'accordionExample'+id" v-for="(account, id) in accounts" :key="id" >
+    <div class="accordion" :id="`accordionExample${id}`" v-for="(account, id) in accounts" :key="id" >
       <div class="card">
           <div class="card-header" id="headingOne">
               <h2 class="mb-0">
                   <button class="btn btn-link text-dark text-decoration-none collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    {{ account.title }} <img src="../static/arrow-down-mint.svg"/>
+                    {{ account.title }} 
                   </button>
               </h2>
           </div>
@@ -34,6 +34,7 @@
 </template>
 
 <script>
+import imgComponent from '../components/imgComponent.vue'
 export default {
     name: 'HistoryPage',
     props: ['account', 'index', 'open'],
@@ -51,14 +52,14 @@ export default {
           title: "WWII Newsprint in color",
           answer: 'Newspaper clipping found in my uncles scrap album of paintings by Ogden Pleissner. Assumed titles: ENGLANDs AIRFIELDS and FLOCKS OF FLYING FORTRESSES. Source unknown.',
           image: '../static/Englands-Airfields-a.jpg',
-          open: true
+          open: false
         },
         {
           id: 3,
           title: 'The Stars and Stripes Paris Edition | Monday, May 7, 1945',
           answer: 'Hello',
           image: '../static/front-page.jpg',
-          open: true
+          open: false
         }
       ]
     }
@@ -94,7 +95,7 @@ h3 {
   margin: 40px 0 0;
 }
 img.header {
-  margin-bottom: 3rem;
+  margin-bottom:0rem;
 }
 ul {
   list-style-type: none;
