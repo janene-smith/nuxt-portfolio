@@ -1,16 +1,14 @@
-<<<<<<< HEAD
+
 # install dependencies
-$ yarn install
+$ npm run install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm run dev
 
 # build for production and launch server
-$ yarn build
-$ yarn start
+$ npm run build
+$ npm run start
 
 # generate static project
-$ yarn generate
-=======
-# nuxt-portfolio
->>>>>>> 9e40b033d85e3780a25ec28336cfd8101f2629a5
+$ npm run generate
+
