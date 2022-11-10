@@ -31,7 +31,9 @@ export default {
     data() {
         return {
           organizations: [],
+          
         };
+
     },
     components: {
         // Register child component

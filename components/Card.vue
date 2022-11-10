@@ -1,8 +1,17 @@
 <template>
-
+    <ul>
+        <li>
+            :identifier="identifier"
+            :title="title"
+            :place="place"
+            :creator="creator"
+        </li>
+    </ul>
 </template>
    
    <script>
+   import axios from 'axios';
+
    export default {
             name: 'ResearchPage',
         data () {
@@ -11,10 +20,10 @@
           }
         },
         props: {
-            organization: {type: String}, 
-            attributes: {type: String},  
-            name: {type: String},
-            address: {type: String} 
+            identifier: {type: String}, 
+            title: {type: String},  
+            place: {type: String},
+            creator: {type: String} 
         }
     }
    </script>
