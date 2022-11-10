@@ -10,7 +10,7 @@ $ yarn build
 $ yarn start
 
 # generate static project
-$ yarn run generate
+$ yarn generate
 =======
 # nuxt-portfolio
 >>>>>>> 9e40b033d85e3780a25ec28336cfd8101f2629a5
