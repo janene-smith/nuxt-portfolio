@@ -1,16 +1,36 @@
 <template>
-    <div class="wrapper">
-        <h1 class="heading">EHRI</h1>
-        <h2 class="heading">European Holocaust Research Infrastructure</h2>
-        <section class="container" v-if="countries">
-            <Card
-                 v-for="country of countries"
-                 :key="country.id"
-                 :country="country"
-            />
-        </section> 
-        <div id="app">
-            <pre>{{ info }}</pre>
+    <div id="app">
+        <div class="wrapper">
+            <h1 class="heading">EHRI</h1>
+            <h2 class="heading">European Holocaust Research Infrastructure</h2>
+            <section class="container" v-if="countries">
+                <Card
+                    v-for="country of countries"
+                    :key="country.id"
+                    :country="country"
+                />
+            </section> 
+            <div class="row">
+                <div class="search-wrapper panel-heading col-sm-12">
+                    <input class="form-control" type="text" v-model="searchQuery" placeholder="Search" />
+                </div>                        
+            </div>
+            <div class="table-responsive">
+                <table v-if="resources.length" class="table">
+                    <thead>
+                        <tr>
+                            <!-- Country designation is two capital letters or spelled out -->
+                            <th>Country Search</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="item in resultQuery">
+                            <td><a v-bind:href="item.uri" target="_blank">{{item.title}}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+            
         </div>     
     </div>
 </template>
