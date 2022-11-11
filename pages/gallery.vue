@@ -3,6 +3,7 @@
         <nuxt-link to="/gallery">
             
         </nuxt-link>
+        <h1 class="ml-2 mb-1">Image Gallery</h1>
         <!-- <a href="/gallery">...</a> (+Vue Router & prefetching) -->
       <!-- <div>
         <img 
