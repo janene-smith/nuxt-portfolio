@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <nuxt-link to="/galllery">
+        <nuxt-link to="/gallery">
             
         </nuxt-link>
         <!-- <a href="/gallery">...</a> (+Vue Router & prefetching) -->
