@@ -1,4 +1,9 @@
 export default {
+  // 404 .html Nuxt will reload page correctly in SPA fallback.
+  generate: {
+    fallback: true
+  }
+  
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
