@@ -3,11 +3,11 @@
       <nuxt-link to="/grid">
             
       </nuxt-link>
-      <h1 class="ml-2 mb-1">Rememberance</h1>
+      <!-- <h1 class="ml-2 mb-1">Rememberance</h1>
           <img class="img fluid" src="../static/AdobeStock_26591710.jpeg" width=100% height=250px  alt="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" />
             <title>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</title>
             <rect width=100% height=100% ></rect>
-            <text class="bg-dark text-white text-right mb-0 text-wrap" x=50% y=50% dy=.10em>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</text>
+            <text class="bg-dark text-white text-right mb-0 text-wrap" x=50% y=50% dy=.10em>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</text> -->
       <!-- Creates three equal-width columns on sm,md,l,xl devices using predefined grid classes. Columns centered in page with parent .container -->
       <div class="container-fluid">
         <div class="row">
@@ -64,7 +64,7 @@
           </div>
       
 
-        <div class="row my-3">
+        <!-- <div class="row my-3">
             <div class="col-md">
                 <a class="text-decoration-none" href="./imgs/AdobeStock_69712984.jpeg" target="_blank">
                   <img src="../static/AdobeStock_69712984.jpeg"  class="img-thumbnail-g mb-1 img-fluid rounded mx-auto d-block" alt="Soldier statue memorial. Omaha beach, France by pio3" style="width:100%">
@@ -90,7 +90,7 @@
                   </div>
                 </a>
             </div>
-          </div>
+          </div> -->
        
         <div class="row" height="350">
             <div class="col-xl p-3">

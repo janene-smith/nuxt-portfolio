@@ -4,14 +4,14 @@
             
         </nuxt-link>
         <!-- <a href="/gallery">...</a> (+Vue Router & prefetching) -->
-      <div>
+      <!-- <div>
         <img 
           alt="Panorama Arromanches by Olivier Rault" 
           src="../static/AdobeStock_42498313.jpeg" 
           width=100% 
           height=230px 
         />
-      </div>
+      </div> -->
         <div class="image-wrapper">
             <!-- Come back later and work on adding in the figure, image, and fig caption components -->
               <imgComponent 
