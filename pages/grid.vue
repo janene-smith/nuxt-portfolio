@@ -3,7 +3,7 @@
       <nuxt-link to="/grid">
             
       </nuxt-link>
-      <h1 class="ml-2 mb-1">Rememberance</h1>
+      <h1 class="ml-2 mb-1">{{ title }}</h1>
       <!-- <img class="img fluid" src="../static/AdobeStock_26591710.jpeg" width=100% height=250px  alt="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="The American WW2 cemetery at Ardennes by Thor Jorgen Udvang" />
             <title>The American WW2 cemetery at Ardennes by Thor Jorgen Udvang</title>
             <rect width=100% height=100% ></rect>
@@ -104,7 +104,26 @@
 
 </template>
 <script>
-
+  export default {
+      data() {
+        return {
+          title: 'Rememberance'
+        }
+      },
+      head() {
+        return {
+          title: this.title,
+          meta: [
+            // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+            {
+              hid: 'description',
+              name: 'description',
+              content: 'My custom description'
+            }
+          ]
+        }
+      }
+    }
 </script>
 <style lang="scss">
 html {
