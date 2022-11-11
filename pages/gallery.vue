@@ -3,7 +3,7 @@
         <nuxt-link to="/gallery">
             
         </nuxt-link>
-        <h1 class="ml-2 mb-1">Image Gallery</h1>
+        <h1 class="ml-2 mb-1">{{ title }}</h1>
         <!-- <a href="/gallery">...</a> (+Vue Router & prefetching) -->
       <!-- <div>
         <img 
@@ -38,6 +38,7 @@
         },
         data () {
           return {
+            title: 'Image Gallery',
             images: [
               {
                 src: require('../static/G-Croom-WWII-006-th.jpg'), 
@@ -72,7 +73,19 @@
             ],
         }
       },
-  
+      head() {
+        return {
+          title: this.title,
+          meta: [
+            // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+            {
+              hid: 'description',
+              name: 'description',
+              content: 'My custom description'
+            }
+          ]
+        }
+      }
     }
   </script>
   
