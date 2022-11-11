@@ -1,5 +1,5 @@
 export default {
-  
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -12,7 +12,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      // hid is used as a unique identifier.
+      { hid: 'description', name: 'description', content: 'My custom description' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
