@@ -6,7 +6,7 @@
         </nuxt-link>
         <!-- <a href="/history">...</a> (+Vue Router & prefetching) -->
     <div>
-      <h1 class="ml-2 mb-1">World War II History found in the pages of an Album</h1>
+      <h1 class="ml-2 mb-1">{{ title }}</h1>
       <!-- <img class="header" alt="Pointe du Hoc, Cricqueville-en-Bessin, Normandie, Calvados, France By Pascal Moulin " src="../static/AdobeStock_175334157.jpeg" width=100% height=230px />
       <title>Pointe du Hoc, Cricqueville-en-Bessin, Normandie, Calvados, France By Pascal Moulin</title>
             <rect width=100% height=100% ></rect>
@@ -40,6 +40,7 @@ export default {
     props: ['account', 'index', 'open'],
   data() {
     return {
+      title: 'World War II History found in the pages of an Album',
       accounts: [
         {
           id: 1,
@@ -77,6 +78,19 @@ export default {
       });
     }
   },
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'My custom description'
+          }
+        ]
+      }
+    }
 };
 
 </script>
