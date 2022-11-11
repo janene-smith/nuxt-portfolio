@@ -12,7 +12,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      // hid is used as a unique identifier.
       { hid: 'description', name: 'description', content: 'My custom description' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
