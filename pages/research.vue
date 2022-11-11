@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <div class="wrapper">
-            <h1 class="heading">EHRI</h1>
+            <h1 class="heading">{{ title }}</h1>
             <h2 class="heading">European Holocaust Research Infrastructure</h2>
             <section class="container">
                 <h4>Listing of organizations and their location</h4>
@@ -30,6 +30,7 @@ export default {
     name: 'researchPage',
     data() {
         return {
+          title: 'EHRI',
           organizations: [],
           
         };
@@ -47,6 +48,19 @@ export default {
                 this.errored = true
             })
             .finally(() => this.loading = false)
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'My custom description'
+          }
+        ]
+      }
     }
 }
 </script>
