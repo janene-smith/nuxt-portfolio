@@ -6,7 +6,7 @@
         <!-- <a href="/">...</a> (+Vue Router & prefetching) -->
     <!-- Jumbotron -->
     <div class="jumbotron">
-      <h1 class="display-4">History and Family</h1>
+      <h1 class="display-4">{{ title }}</h1>
       <p class="lead">My Great Uncle Gerald N. Croom was a Military Police officer during the second World War. It was an honor when he gave me his WWII album and I hope to honor him by helping it live on. Remembering Gerald (Jerry to friends) and those that fought so fearlessly for the World.</p>
       <hr class="my-4">
       <p>Stationed in Deauville, France</p>
@@ -62,7 +62,21 @@ export default {
   },
   data() {
     return {
+      title: 'History and Family',
       soldier: ''
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My custom description'
+        }
+      ]
     }
   }
 };
