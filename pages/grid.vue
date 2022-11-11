@@ -40,11 +40,11 @@
                 </div>
               </div>
             </div>
-                <div>
+                <!-- <div>
                   <h4 class="my-3">American Flag Signed by Military Police Army Unit</h4>
                   <img src="../static/American Flag with MP unit names-Croom-WWII.jpg" alt="American Flag signed by MP soldiers during WWII"  class="img-fluid rounded d-block">
                   <p class="italic">This U.S. flag was in my Great Uncles scrap album with signatures from fellow MP soldiers. Gerald N Croom signed top right corner.</p>
-                </div>
+                </div> -->
 
               </div>
 
